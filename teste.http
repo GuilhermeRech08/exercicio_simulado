@@ -1,0 +1,76 @@
+### 1 Testar cpf com tamanho incorreto
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome": "Teste tamanho cpf",
+    "email": "erro@gmail.com",
+    "senha": "123",
+    "cpf": "12345",
+
+    "celular": "48900000000"
+}
+
+### 2 Cadastrar cliente1
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome": "Marcos",
+    "email": "marcos@gmail.com",
+    "senha": "123",
+    "cpf": "12345678912",
+    "celular": "48999998888"
+}
+
+### 3 Cadastrar cliente2
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome": "Ana",
+    "email": "ana@gmail.com",
+    "senha": "123",
+    "cpf": "22233344455",
+    "celular": "48988887777"
+}
+
+### 4 Cadastrar cliente3
+POST http://localhost:3000/cliente
+Content-Type: application/json
+
+{
+    "nome": "João",
+    "email": "joao@gmail.com",
+    "senha": "123",
+    "cpf": "98765432100",
+    "celular": "48977776666"
+}
+
+### 5 fazer o login Cliente1
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "marcos@gmail.com",
+    "senha": "123"
+}
+
+### 6 fazer o login cliente2
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "ana@gmail.com",
+    "senha": "123"
+}
+
+### 7 fazer o login cliente3
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "joao@gmail.com",
+    "senha": "123"
+}
+                       
